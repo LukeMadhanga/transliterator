@@ -2,6 +2,28 @@
 
 /**
  * Comprehensive string converter for PHP < 5.4
+ * Supported blocks:
+ * Basic Latin
+ * Latin-1 Supplement
+ * Latin Extended-A
+ * Latin Extended-B
+ * IPA Extensions Block
+ * Spacing Modifier Letters
+ * Combining Diacritical Marks
+ * Greek and Coptic
+ * Cyrillic
+ * Cyrillic Supplement
+ * Armenian
+ * Georgian
+ * Latin Extended Additional
+ * Greek Extended
+ * General Punctuation
+ * Superscripts and Subscripts
+ * Combining Diacritical Marks for Symbols
+ * Georgian Supplement
+ * Cyrillic Extended-A
+ * Cyrillic Extended-B
+ * Latin Extended-D
  */
 class cTransliterator {
 
@@ -774,6 +796,512 @@ class cTransliterator {
         "\xe1\x83\xb0",    // ჰ (h)
         "\xe1\x83\xb3",    // ჳ (ui)
         "\xe1\x83\xb4",    // ჴ (q)
+        "\xe1\xb8\x80",    // Ḁ (A)
+        "\xe1\xb8\x81",    // ḁ (a)
+        "\xe1\xb8\x82",    // Ḃ (B)
+        "\xe1\xb8\x83",    // ḃ (b)
+        "\xe1\xb8\x84",    // Ḅ (B)
+        "\xe1\xb8\x85",    // ḅ (b)
+        "\xe1\xb8\x86",    // Ḇ (B)
+        "\xe1\xb8\x87",    // ḇ (b)
+        "\xe1\xb8\x88",    // Ḉ (C)
+        "\xe1\xb8\x89",    // ḉ (c)
+        "\xe1\xb8\x8a",    // Ḋ (D)
+        "\xe1\xb8\x8b",    // ḋ (d)
+        "\xe1\xb8\x8c",    // Ḍ (D)
+        "\xe1\xb8\x8d",    // ḍ (d)
+        "\xe1\xb8\x8e",    // Ḏ (D)
+        "\xe1\xb8\x8f",    // ḏ (d)
+        "\xe1\xb8\x90",    // Ḑ (D)
+        "\xe1\xb8\x91",    // ḑ (d)
+        "\xe1\xb8\x92",    // Ḓ (D)
+        "\xe1\xb8\x93",    // ḓ (d)
+        "\xe1\xb8\x94",    // Ḕ (E)
+        "\xe1\xb8\x95",    // ḕ (e)
+        "\xe1\xb8\x96",    // Ḗ (E)
+        "\xe1\xb8\x97",    // ḗ (e)
+        "\xe1\xb8\x98",    // Ḙ (E)
+        "\xe1\xb8\x99",    // ḙ (e)
+        "\xe1\xb8\x9a",    // Ḛ (E)
+        "\xe1\xb8\x9b",    // ḛ (e)
+        "\xe1\xb8\x9c",    // Ḝ (E)
+        "\xe1\xb8\x9d",    // ḝ (e)
+        "\xe1\xb8\x9e",    // Ḟ (F)
+        "\xe1\xb8\x9f",    // ḟ (f)
+        "\xe1\xb8\xa0",    // Ḡ (G)
+        "\xe1\xb8\xa1",    // ḡ (g)
+        "\xe1\xb8\xa2",    // Ḣ (H)
+        "\xe1\xb8\xa3",    // ḣ (h)
+        "\xe1\xb8\xa4",    // Ḥ (H)
+        "\xe1\xb8\xa5",    // ḥ (h)
+        "\xe1\xb8\xa6",    // Ḧ (H)
+        "\xe1\xb8\xa7",    // ḧ (h)
+        "\xe1\xb8\xa8",    // Ḩ (H)
+        "\xe1\xb8\xa9",    // ḩ (h)
+        "\xe1\xb8\xaa",    // Ḫ (H)
+        "\xe1\xb8\xab",    // ḫ (h)
+        "\xe1\xb8\xac",    // Ḭ (I)
+        "\xe1\xb8\xad",    // ḭ (i)
+        "\xe1\xb8\xae",    // Ḯ (I)
+        "\xe1\xb8\xaf",    // ḯ (i)
+        "\xe1\xb8\xb0",    // Ḱ (K)
+        "\xe1\xb8\xb1",    // ḱ (k)
+        "\xe1\xb8\xb2",    // Ḳ (K)
+        "\xe1\xb8\xb3",    // ḳ (k)
+        "\xe1\xb8\xb4",    // Ḵ (K)
+        "\xe1\xb8\xb5",    // ḵ (k)
+        "\xe1\xb8\xb6",    // Ḷ (L)
+        "\xe1\xb8\xb7",    // ḷ (l)
+        "\xe1\xb8\xb8",    // Ḹ (L)
+        "\xe1\xb8\xb9",    // ḹ (l)
+        "\xe1\xb8\xba",    // Ḻ (L)
+        "\xe1\xb8\xbb",    // ḻ (l)
+        "\xe1\xb8\xbc",    // Ḽ (L)
+        "\xe1\xb8\xbd",    // ḽ (l)
+        "\xe1\xb8\xbe",    // Ḿ (M)
+        "\xe1\xb8\xbf",    // ḿ (m)
+        "\xe1\xb9\x80",    // Ṁ (M)
+        "\xe1\xb9\x81",    // ṁ (m)
+        "\xe1\xb9\x82",    // Ṃ (M)
+        "\xe1\xb9\x83",    // ṃ (m)
+        "\xe1\xb9\x84",    // Ṅ (N)
+        "\xe1\xb9\x85",    // ṅ (n)
+        "\xe1\xb9\x86",    // Ṇ (N)
+        "\xe1\xb9\x87",    // ṇ (n)
+        "\xe1\xb9\x88",    // Ṉ (N)
+        "\xe1\xb9\x89",    // ṉ (n)
+        "\xe1\xb9\x8a",    // Ṋ (N)
+        "\xe1\xb9\x8b",    // ṋ (n)
+        "\xe1\xb9\x8c",    // Ṍ (O)
+        "\xe1\xb9\x8d",    // ṍ (o)
+        "\xe1\xb9\x8e",    // Ṏ (O)
+        "\xe1\xb9\x8f",    // ṏ (o)
+        "\xe1\xb9\x90",    // Ṑ (O)
+        "\xe1\xb9\x91",    // ṑ (o)
+        "\xe1\xb9\x92",    // Ṓ (O)
+        "\xe1\xb9\x93",    // ṓ (o)
+        "\xe1\xb9\x94",    // Ṕ (P)
+        "\xe1\xb9\x95",    // ṕ (p)
+        "\xe1\xb9\x96",    // Ṗ (P)
+        "\xe1\xb9\x97",    // ṗ (p)
+        "\xe1\xb9\x98",    // Ṙ (R)
+        "\xe1\xb9\x99",    // ṙ (r)
+        "\xe1\xb9\x9a",    // Ṛ (R)
+        "\xe1\xb9\x9b",    // ṛ (r)
+        "\xe1\xb9\x9c",    // Ṝ (R)
+        "\xe1\xb9\x9d",    // ṝ (r)
+        "\xe1\xb9\x9e",    // Ṟ (R)
+        "\xe1\xb9\x9f",    // ṟ (r)
+        "\xe1\xb9\xa0",    // Ṡ (S)
+        "\xe1\xb9\xa1",    // ṡ (s)
+        "\xe1\xb9\xa2",    // Ṣ (S)
+        "\xe1\xb9\xa3",    // ṣ (s)
+        "\xe1\xb9\xa4",    // Ṥ (S)
+        "\xe1\xb9\xa5",    // ṥ (s)
+        "\xe1\xb9\xa6",    // Ṧ (S)
+        "\xe1\xb9\xa7",    // ṧ (s)
+        "\xe1\xb9\xa8",    // Ṩ (S)
+        "\xe1\xb9\xa9",    // ṩ (s)
+        "\xe1\xb9\xaa",    // Ṫ (T)
+        "\xe1\xb9\xab",    // ṫ (t)
+        "\xe1\xb9\xac",    // Ṭ (T)
+        "\xe1\xb9\xad",    // ṭ (t)
+        "\xe1\xb9\xae",    // Ṯ (T)
+        "\xe1\xb9\xaf",    // ṯ (t)
+        "\xe1\xb9\xb0",    // Ṱ (T)
+        "\xe1\xb9\xb1",    // ṱ (t)
+        "\xe1\xb9\xb2",    // Ṳ (U)
+        "\xe1\xb9\xb3",    // ṳ (u)
+        "\xe1\xb9\xb4",    // Ṵ (U)
+        "\xe1\xb9\xb5",    // ṵ (u)
+        "\xe1\xb9\xb6",    // Ṷ (U)
+        "\xe1\xb9\xb7",    // ṷ (u)
+        "\xe1\xb9\xb8",    // Ṹ (U)
+        "\xe1\xb9\xb9",    // ṹ (u)
+        "\xe1\xb9\xba",    // Ṻ (U)
+        "\xe1\xb9\xbb",    // ṻ (u)
+        "\xe1\xb9\xbc",    // Ṽ (V)
+        "\xe1\xb9\xbd",    // ṽ (v)
+        "\xe1\xb9\xbe",    // Ṿ (V)
+        "\xe1\xb9\xbf",    // ṿ (v)
+        "\xe1\xba\x80",    // Ẁ (W)
+        "\xe1\xba\x81",    // ẁ (w)
+        "\xe1\xba\x82",    // Ẃ (W)
+        "\xe1\xba\x83",    // ẃ (w)
+        "\xe1\xba\x84",    // Ẅ (W)
+        "\xe1\xba\x85",    // ẅ (w)
+        "\xe1\xba\x86",    // Ẇ (W)
+        "\xe1\xba\x87",    // ẇ (w)
+        "\xe1\xba\x88",    // Ẉ (W)
+        "\xe1\xba\x89",    // ẉ (w)
+        "\xe1\xba\x8a",    // Ẋ (X)
+        "\xe1\xba\x8b",    // ẋ (x)
+        "\xe1\xba\x8c",    // Ẍ (X)
+        "\xe1\xba\x8d",    // ẍ (x)
+        "\xe1\xba\x8e",    // Ẏ (Y)
+        "\xe1\xba\x8f",    // ẏ (y)
+        "\xe1\xba\x90",    // Ẑ (Z)
+        "\xe1\xba\x91",    // ẑ (z)
+        "\xe1\xba\x92",    // Ẓ (Z)
+        "\xe1\xba\x93",    // ẓ (z)
+        "\xe1\xba\x94",    // Ẕ (Z)
+        "\xe1\xba\x95",    // ẕ (z)
+        "\xe1\xba\x96",    // ẖ (h)
+        "\xe1\xba\x97",    // ẗ (t)
+        "\xe1\xba\x98",    // ẘ (w)
+        "\xe1\xba\x99",    // ẙ (y)
+        "\xe1\xba\x9a",    // ẚ (a)
+        "\xe1\xba\x9b",    // ẛ (s)
+        "\xe1\xba\x9c",    // ẜ (s)
+        "\xe1\xba\x9d",    // ẝ (s)
+        "\xe1\xba\x9e",    // ẞ (SS)
+        "\xe1\xba\xa0",    // Ạ (A)
+        "\xe1\xba\xa1",    // ạ (a)
+        "\xe1\xba\xa2",    // Ả (A)
+        "\xe1\xba\xa3",    // ả (a)
+        "\xe1\xba\xa4",    // Ấ (A)
+        "\xe1\xba\xa5",    // ấ (a)
+        "\xe1\xba\xa6",    // Ầ (A)
+        "\xe1\xba\xa7",    // ầ (a)
+        "\xe1\xba\xa8",    // Ẩ (A)
+        "\xe1\xba\xa9",    // ẩ (a)
+        "\xe1\xba\xaa",    // Ẫ (A)
+        "\xe1\xba\xab",    // ẫ (a)
+        "\xe1\xba\xac",    // Ậ (A)
+        "\xe1\xba\xad",    // ậ (a)
+        "\xe1\xba\xae",    // Ắ (A)
+        "\xe1\xba\xaf",    // ắ (a)
+        "\xe1\xba\xb0",    // Ằ (A)
+        "\xe1\xba\xb1",    // ằ (a)
+        "\xe1\xba\xb2",    // Ẳ (A)
+        "\xe1\xba\xb3",    // ẳ (a)
+        "\xe1\xba\xb4",    // Ẵ (A)
+        "\xe1\xba\xb5",    // ẵ (a)
+        "\xe1\xba\xb6",    // Ặ (A)
+        "\xe1\xba\xb7",    // ặ (a)
+        "\xe1\xba\xb8",    // Ẹ (E)
+        "\xe1\xba\xb9",    // ẹ (e)
+        "\xe1\xba\xba",    // Ẻ (E)
+        "\xe1\xba\xbb",    // ẻ (e)
+        "\xe1\xba\xbc",    // Ẽ (E)
+        "\xe1\xba\xbd",    // ẽ (e)
+        "\xe1\xba\xbe",    // Ế (E)
+        "\xe1\xba\xbf",    // ế (e)
+        "\xe1\xbb\x80",    // Ề (E)
+        "\xe1\xbb\x81",    // ề (e)
+        "\xe1\xbb\x82",    // Ể (E)
+        "\xe1\xbb\x83",    // ể (e)
+        "\xe1\xbb\x84",    // Ễ (E)
+        "\xe1\xbb\x85",    // ễ (e)
+        "\xe1\xbb\x86",    // Ệ (E)
+        "\xe1\xbb\x87",    // ệ (e)
+        "\xe1\xbb\x88",    // Ỉ (I)
+        "\xe1\xbb\x89",    // ỉ (i)
+        "\xe1\xbb\x8a",    // Ị (I)
+        "\xe1\xbb\x8b",    // ị (i)
+        "\xe1\xbb\x8c",    // Ọ (O)
+        "\xe1\xbb\x8d",    // ọ (o)
+        "\xe1\xbb\x8e",    // Ỏ (O)
+        "\xe1\xbb\x8f",    // ỏ (o)
+        "\xe1\xbb\x90",    // Ố (O)
+        "\xe1\xbb\x91",    // ố (o)
+        "\xe1\xbb\x92",    // Ồ (O)
+        "\xe1\xbb\x93",    // ồ (o)
+        "\xe1\xbb\x94",    // Ổ (O)
+        "\xe1\xbb\x95",    // ổ (o)
+        "\xe1\xbb\x96",    // Ỗ (O)
+        "\xe1\xbb\x97",    // ỗ (o)
+        "\xe1\xbb\x98",    // Ộ (O)
+        "\xe1\xbb\x99",    // ộ (o)
+        "\xe1\xbb\x9a",    // Ớ (O)
+        "\xe1\xbb\x9b",    // ớ (o)
+        "\xe1\xbb\x9c",    // Ờ (O)
+        "\xe1\xbb\x9d",    // ờ (o)
+        "\xe1\xbb\x9e",    // Ở (O)
+        "\xe1\xbb\x9f",    // ở (o)
+        "\xe1\xbb\xa0",    // Ỡ (O)
+        "\xe1\xbb\xa1",    // ỡ (o)
+        "\xe1\xbb\xa2",    // Ợ (O)
+        "\xe1\xbb\xa3",    // ợ (o)
+        "\xe1\xbb\xa4",    // Ụ (U)
+        "\xe1\xbb\xa5",    // ụ (u)
+        "\xe1\xbb\xa6",    // Ủ (U)
+        "\xe1\xbb\xa7",    // ủ (u)
+        "\xe1\xbb\xa8",    // Ứ (U)
+        "\xe1\xbb\xa9",    // ứ (u)
+        "\xe1\xbb\xaa",    // Ừ (U)
+        "\xe1\xbb\xab",    // ừ (u)
+        "\xe1\xbb\xac",    // Ử (U)
+        "\xe1\xbb\xad",    // ử (u)
+        "\xe1\xbb\xae",    // Ữ (U)
+        "\xe1\xbb\xaf",    // ữ (u)
+        "\xe1\xbb\xb0",    // Ự (U)
+        "\xe1\xbb\xb1",    // ự (u)
+        "\xe1\xbb\xb2",    // Ỳ (Y)
+        "\xe1\xbb\xb3",    // ỳ (y)
+        "\xe1\xbb\xb4",    // Ỵ (Y)
+        "\xe1\xbb\xb5",    // ỵ (y)
+        "\xe1\xbb\xb6",    // Ỷ (Y)
+        "\xe1\xbb\xb7",    // ỷ (y)
+        "\xe1\xbb\xb8",    // Ỹ (Y)
+        "\xe1\xbb\xb9",    // ỹ (y)
+        "\xe1\xbb\xba",    // Ỻ (LL)
+        "\xe1\xbb\xbb",    // ỻ (ll)
+        "\xe1\xbb\xbc",    // Ỽ (V)
+        "\xe1\xbb\xbd",    // ỽ (v)
+        "\xe1\xbb\xbe",    // Ỿ (Y)
+        "\xe1\xbb\xbf",    // ỿ (y)
+        "\xe1\xbc\x80",    // ἀ (a)
+        "\xe1\xbc\x81",    // ἁ (ha)
+        "\xe1\xbc\x82",    // ἂ (a)
+        "\xe1\xbc\x83",    // ἃ (ha)
+        "\xe1\xbc\x84",    // ἄ (a)
+        "\xe1\xbc\x85",    // ἅ (ha)
+        "\xe1\xbc\x86",    // ἆ (a)
+        "\xe1\xbc\x87",    // ἇ (ha)
+        "\xe1\xbc\x88",    // Ἀ (A)
+        "\xe1\xbc\x89",    // Ἁ (HA)
+        "\xe1\xbc\x8a",    // Ἂ (A)
+        "\xe1\xbc\x8b",    // Ἃ (HA)
+        "\xe1\xbc\x8c",    // Ἄ (A)
+        "\xe1\xbc\x8d",    // Ἅ (HA)
+        "\xe1\xbc\x8e",    // Ἆ (A)
+        "\xe1\xbc\x8f",    // Ἇ (HA)
+        "\xe1\xbc\x90",    // ἐ (e)
+        "\xe1\xbc\x91",    // ἑ (he)
+        "\xe1\xbc\x92",    // ἒ (e)
+        "\xe1\xbc\x93",    // ἓ (he)
+        "\xe1\xbc\x94",    // ἔ (e)
+        "\xe1\xbc\x95",    // ἕ (he)
+        "\xe1\xbc\x98",    // Ἐ (E)
+        "\xe1\xbc\x99",    // Ἑ (HE)
+        "\xe1\xbc\x9a",    // Ἒ (E)
+        "\xe1\xbc\x9b",    // Ἓ (HE)
+        "\xe1\xbc\x9c",    // Ἔ (E)
+        "\xe1\xbc\x9d",    // Ἕ (HE)
+        "\xe1\xbc\xa0",    // ἠ (e)
+        "\xe1\xbc\xa1",    // ἡ (he)
+        "\xe1\xbc\xa2",    // ἢ (e)
+        "\xe1\xbc\xa3",    // ἣ (he)
+        "\xe1\xbc\xa4",    // ἤ (e)
+        "\xe1\xbc\xa5",    // ἥ (he)
+        "\xe1\xbc\xa6",    // ἦ (e)
+        "\xe1\xbc\xa7",    // ἧ (he)
+        "\xe1\xbc\xa8",    // Ἠ (E)
+        "\xe1\xbc\xa9",    // Ἡ (HE)
+        "\xe1\xbc\xaa",    // Ἢ (E)
+        "\xe1\xbc\xab",    // Ἣ (HE)
+        "\xe1\xbc\xac",    // Ἤ (E)
+        "\xe1\xbc\xad",    // Ἥ (HE)
+        "\xe1\xbc\xae",    // Ἦ (E)
+        "\xe1\xbc\xaf",    // Ἧ (HE)
+        "\xe1\xbc\xb0",    // ἰ (i)
+        "\xe1\xbc\xb1",    // ἱ (hi)
+        "\xe1\xbc\xb2",    // ἲ (i)
+        "\xe1\xbc\xb3",    // ἳ (hi)
+        "\xe1\xbc\xb4",    // ἴ (i)
+        "\xe1\xbc\xb5",    // ἵ (hi)
+        "\xe1\xbc\xb6",    // ἶ (i)
+        "\xe1\xbc\xb7",    // ἷ (hi)
+        "\xe1\xbc\xb8",    // Ἰ (I)
+        "\xe1\xbc\xb9",    // Ἱ (HI)
+        "\xe1\xbc\xba",    // Ἲ (I)
+        "\xe1\xbc\xbb",    // Ἳ (HI)
+        "\xe1\xbc\xbc",    // Ἴ (I)
+        "\xe1\xbc\xbd",    // Ἵ (HI)
+        "\xe1\xbc\xbe",    // Ἶ (I)
+        "\xe1\xbc\xbf",    // Ἷ (HI)
+        "\xe1\xbd\x80",    // ὀ (o)
+        "\xe1\xbd\x81",    // ὁ (ho)
+        "\xe1\xbd\x82",    // ὂ (o)
+        "\xe1\xbd\x83",    // ὃ (ho)
+        "\xe1\xbd\x84",    // ὄ (o)
+        "\xe1\xbd\x85",    // ὅ (ho)
+        "\xe1\xbd\x88",    // Ὀ (O)
+        "\xe1\xbd\x89",    // Ὁ (HO)
+        "\xe1\xbd\x8a",    // Ὂ (O)
+        "\xe1\xbd\x8b",    // Ὃ (HO)
+        "\xe1\xbd\x8c",    // Ὄ (O)
+        "\xe1\xbd\x8d",    // Ὅ (HO)
+        "\xe1\xbd\x90",    // ὐ (y)
+        "\xe1\xbd\x91",    // ὑ (hy)
+        "\xe1\xbd\x92",    // ὒ (y)
+        "\xe1\xbd\x93",    // ὓ (hy)
+        "\xe1\xbd\x94",    // ὔ (y)
+        "\xe1\xbd\x95",    // ὕ (hy)
+        "\xe1\xbd\x96",    // ὖ (y)
+        "\xe1\xbd\x97",    // ὗ (hy)
+        "\xe1\xbd\x99",    // Ὑ (HY)
+        "\xe1\xbd\x9b",    // Ὓ (HY)
+        "\xe1\xbd\x9d",    // Ὕ (HY)
+        "\xe1\xbd\x9f",    // Ὗ (HY)
+        "\xe1\xbd\xa0",    // ὠ (o)
+        "\xe1\xbd\xa1",    // ὡ (ho)
+        "\xe1\xbd\xa2",    // ὢ (o)
+        "\xe1\xbd\xa3",    // ὣ (ho)
+        "\xe1\xbd\xa4",    // ὤ (o)
+        "\xe1\xbd\xa5",    // ὥ (ho)
+        "\xe1\xbd\xa6",    // ὦ (o)
+        "\xe1\xbd\xa7",    // ὧ (ho)
+        "\xe1\xbd\xa8",    // Ὠ (O)
+        "\xe1\xbd\xa9",    // Ὡ (HO)
+        "\xe1\xbd\xaa",    // Ὢ (O)
+        "\xe1\xbd\xab",    // Ὣ (HO)
+        "\xe1\xbd\xac",    // Ὤ (O)
+        "\xe1\xbd\xad",    // Ὥ (HO)
+        "\xe1\xbd\xae",    // Ὦ (O)
+        "\xe1\xbd\xaf",    // Ὧ (HO)
+        "\xe1\xbd\xb0",    // ὰ (a)
+        "\xe1\xbd\xb1",    // ά (a)
+        "\xe1\xbd\xb2",    // ὲ (e)
+        "\xe1\xbd\xb3",    // έ (e)
+        "\xe1\xbd\xb4",    // ὴ (e)
+        "\xe1\xbd\xb5",    // ή (e)
+        "\xe1\xbd\xb6",    // ὶ (i)
+        "\xe1\xbd\xb7",    // ί (i)
+        "\xe1\xbd\xb8",    // ὸ (o)
+        "\xe1\xbd\xb9",    // ό (o)
+        "\xe1\xbd\xba",    // ὺ (y)
+        "\xe1\xbd\xbb",    // ύ (y)
+        "\xe1\xbd\xbc",    // ὼ (o)
+        "\xe1\xbd\xbd",    // ώ (o)
+        "\xe1\xbe\x80",    // ᾀ (ai)
+        "\xe1\xbe\x81",    // ᾁ (hai)
+        "\xe1\xbe\x82",    // ᾂ (ai)
+        "\xe1\xbe\x83",    // ᾃ (hai)
+        "\xe1\xbe\x84",    // ᾄ (ai)
+        "\xe1\xbe\x85",    // ᾅ (hai)
+        "\xe1\xbe\x86",    // ᾆ (ai)
+        "\xe1\xbe\x87",    // ᾇ (hai)
+        "\xe1\xbe\x88",    // ᾈ (AI)
+        "\xe1\xbe\x89",    // ᾉ (HAI)
+        "\xe1\xbe\x8a",    // ᾊ (AI)
+        "\xe1\xbe\x8b",    // ᾋ (HAI)
+        "\xe1\xbe\x8c",    // ᾌ (AI)
+        "\xe1\xbe\x8d",    // ᾍ (HAI)
+        "\xe1\xbe\x8e",    // ᾎ (AI)
+        "\xe1\xbe\x8f",    // ᾏ (HAI)
+        "\xe1\xbe\x90",    // ᾐ (ei)
+        "\xe1\xbe\x91",    // ᾑ (hei)
+        "\xe1\xbe\x92",    // ᾒ (ei)
+        "\xe1\xbe\x93",    // ᾓ (hei)
+        "\xe1\xbe\x94",    // ᾔ (ei)
+        "\xe1\xbe\x95",    // ᾕ (hei)
+        "\xe1\xbe\x96",    // ᾖ (ei)
+        "\xe1\xbe\x97",    // ᾗ (hei)
+        "\xe1\xbe\x98",    // ᾘ (EI)
+        "\xe1\xbe\x99",    // ᾙ (HEI)
+        "\xe1\xbe\x9a",    // ᾚ (EI)
+        "\xe1\xbe\x9b",    // ᾛ (HEI)
+        "\xe1\xbe\x9c",    // ᾜ (EI)
+        "\xe1\xbe\x9d",    // ᾝ (HEI)
+        "\xe1\xbe\x9e",    // ᾞ (EI)
+        "\xe1\xbe\x9f",    // ᾟ (HEI)
+        "\xe1\xbe\xa0",    // ᾠ (oi)
+        "\xe1\xbe\xa1",    // ᾡ (hoi)
+        "\xe1\xbe\xa2",    // ᾢ (oi)
+        "\xe1\xbe\xa3",    // ᾣ (hoi)
+        "\xe1\xbe\xa4",    // ᾤ (oi)
+        "\xe1\xbe\xa5",    // ᾥ (hoi)
+        "\xe1\xbe\xa6",    // ᾦ (oi)
+        "\xe1\xbe\xa7",    // ᾧ (hoi)
+        "\xe1\xbe\xa8",    // ᾨ (OI)
+        "\xe1\xbe\xa9",    // ᾩ (HOI)
+        "\xe1\xbe\xaa",    // ᾪ (OI)
+        "\xe1\xbe\xab",    // ᾫ (HOI)
+        "\xe1\xbe\xac",    // ᾬ (OI)
+        "\xe1\xbe\xad",    // ᾭ (HOI)
+        "\xe1\xbe\xae",    // ᾮ (OI)
+        "\xe1\xbe\xaf",    // ᾯ (HOI)
+        "\xe1\xbe\xb0",    // ᾰ (a)
+        "\xe1\xbe\xb1",    // ᾱ (a)
+        "\xe1\xbe\xb2",    // ᾲ (ai)
+        "\xe1\xbe\xb3",    // ᾳ (ai)
+        "\xe1\xbe\xb4",    // ᾴ (ai)
+        "\xe1\xbe\xb6",    // ᾶ (a)
+        "\xe1\xbe\xb7",    // ᾷ (ai)
+        "\xe1\xbe\xb8",    // Ᾰ (A)
+        "\xe1\xbe\xb9",    // Ᾱ (A)
+        "\xe1\xbe\xba",    // Ὰ (A)
+        "\xe1\xbe\xbb",    // Ά (A)
+        "\xe1\xbe\xbc",    // ᾼ (AI)
+        "\xe1\xbe\xbe",    // ι (i)
+        "\xe1\xbf\x81",    // ῁ (¨̂)
+        "\xe1\xbf\x82",    // ῂ (ei)
+        "\xe1\xbf\x83",    // ῃ (ei)
+        "\xe1\xbf\x84",    // ῄ (ei)
+        "\xe1\xbf\x86",    // ῆ (e)
+        "\xe1\xbf\x87",    // ῇ (ei)
+        "\xe1\xbf\x88",    // Ὲ (E)
+        "\xe1\xbf\x89",    // Έ (E)
+        "\xe1\xbf\x8a",    // Ὴ (E)
+        "\xe1\xbf\x8b",    // Ή (E)
+        "\xe1\xbf\x8c",    // ῌ (EI)
+        "\xe1\xbf\x8f",    // ῏ (᾿̂)
+        "\xe1\xbf\x90",    // ῐ (i)
+        "\xe1\xbf\x91",    // ῑ (i)
+        "\xe1\xbf\x92",    // ῒ (i)
+        "\xe1\xbf\x93",    // ΐ (i)
+        "\xe1\xbf\x96",    // ῖ (i)
+        "\xe1\xbf\x97",    // ῗ (i)
+        "\xe1\xbf\x98",    // Ῐ (I)
+        "\xe1\xbf\x99",    // Ῑ (I)
+        "\xe1\xbf\x9a",    // Ὶ (I)
+        "\xe1\xbf\x9b",    // Ί (I)
+        "\xe1\xbf\x9f",    // ῟ (῾̂)
+        "\xe1\xbf\xa0",    // ῠ (y)
+        "\xe1\xbf\xa1",    // ῡ (y)
+        "\xe1\xbf\xa2",    // ῢ (y)
+        "\xe1\xbf\xa3",    // ΰ (y)
+        "\xe1\xbf\xa4",    // ῤ (r)
+        "\xe1\xbf\xa5",    // ῥ (rh)
+        "\xe1\xbf\xa6",    // ῦ (y)
+        "\xe1\xbf\xa7",    // ῧ (y)
+        "\xe1\xbf\xa8",    // Ῠ (Y)
+        "\xe1\xbf\xa9",    // Ῡ (Y)
+        "\xe1\xbf\xaa",    // Ὺ (Y)
+        "\xe1\xbf\xab",    // Ύ (Y)
+        "\xe1\xbf\xac",    // Ῥ (RH)
+        "\xe1\xbf\xb2",    // ῲ (oi)
+        "\xe1\xbf\xb3",    // ῳ (oi)
+        "\xe1\xbf\xb4",    // ῴ (oi)
+        "\xe1\xbf\xb6",    // ῶ (o)
+        "\xe1\xbf\xb7",    // ῷ (oi)
+        "\xe1\xbf\xb8",    // Ὸ (O)
+        "\xe1\xbf\xb9",    // Ό (O)
+        "\xe1\xbf\xba",    // Ὼ (O)
+        "\xe1\xbf\xbb",    // Ώ (O)
+        "\xe1\xbf\xbc",    // ῼ (OI)
+        "\xe2\x80\x81",    //   ( )
+        "\xe2\x80\x82",    //   ( )
+        "\xe2\x80\x83",    //   ( )
+        "\xe2\x80\x84",    //   ( )
+        "\xe2\x80\x85",    //   ( )
+        "\xe2\x80\x86",    //   ( )
+        "\xe2\x80\x87",    //   ( )
+        "\xe2\x80\x88",    //   ( )
+        "\xe2\x80\x89",    //   ( )
+        "\xe2\x80\x8a",    //   ( )
+        "\xe2\x80\x90",    // ‐ (-)
+        "\xe2\x80\x91",    // ‑ (-)
+        "\xe2\x80\x92",    // ‒ (-)
+        "\xe2\x80\x95",    // ― (-)
+        "\xe2\x80\x96",    // ‖ (||)
+        "\xe2\x80\x9b",    // ‛ (')
+        "\xe2\x80\x9f",    // ‟ (")
+        "\xe2\x80\xa4",    // ․ (.)
+        "\xe2\x80\xa5",    // ‥ (..)
+        "\xe2\x80\xb2",    // ′ (')
+        "\xe2\x80\xb3",    // ″ (")
+        "\xe2\x80\xbc",    // ‼ (!!)
+        "\xe2\x81\x84",    // ⁄ (/)
+        "\xe2\x81\x85",    // ⁅ ([)
+        "\xe2\x81\x86",    // ⁆ (])
+        "\xe2\x81\x87",    // ⁇ (??)
+        "\xe2\x81\x88",    // ⁈ (?!)
+        "\xe2\x81\x89",    // ⁉ (!?)
+        "\xe2\x81\x8e",    // ⁎ (*)
+        "\xe2\x81\x9f",    //   ( )
     );
     private static $tochars = array(
         ',',    // ‚
@@ -1544,6 +2072,512 @@ class cTransliterator {
         'h',    // ჰ
         'ui',    // ჳ
         'q',    // ჴ
+        'A',    // Ḁ
+        'a',    // ḁ
+        'B',    // Ḃ
+        'b',    // ḃ
+        'B',    // Ḅ
+        'b',    // ḅ
+        'B',    // Ḇ
+        'b',    // ḇ
+        'C',    // Ḉ
+        'c',    // ḉ
+        'D',    // Ḋ
+        'd',    // ḋ
+        'D',    // Ḍ
+        'd',    // ḍ
+        'D',    // Ḏ
+        'd',    // ḏ
+        'D',    // Ḑ
+        'd',    // ḑ
+        'D',    // Ḓ
+        'd',    // ḓ
+        'E',    // Ḕ
+        'e',    // ḕ
+        'E',    // Ḗ
+        'e',    // ḗ
+        'E',    // Ḙ
+        'e',    // ḙ
+        'E',    // Ḛ
+        'e',    // ḛ
+        'E',    // Ḝ
+        'e',    // ḝ
+        'F',    // Ḟ
+        'f',    // ḟ
+        'G',    // Ḡ
+        'g',    // ḡ
+        'H',    // Ḣ
+        'h',    // ḣ
+        'H',    // Ḥ
+        'h',    // ḥ
+        'H',    // Ḧ
+        'h',    // ḧ
+        'H',    // Ḩ
+        'h',    // ḩ
+        'H',    // Ḫ
+        'h',    // ḫ
+        'I',    // Ḭ
+        'i',    // ḭ
+        'I',    // Ḯ
+        'i',    // ḯ
+        'K',    // Ḱ
+        'k',    // ḱ
+        'K',    // Ḳ
+        'k',    // ḳ
+        'K',    // Ḵ
+        'k',    // ḵ
+        'L',    // Ḷ
+        'l',    // ḷ
+        'L',    // Ḹ
+        'l',    // ḹ
+        'L',    // Ḻ
+        'l',    // ḻ
+        'L',    // Ḽ
+        'l',    // ḽ
+        'M',    // Ḿ
+        'm',    // ḿ
+        'M',    // Ṁ
+        'm',    // ṁ
+        'M',    // Ṃ
+        'm',    // ṃ
+        'N',    // Ṅ
+        'n',    // ṅ
+        'N',    // Ṇ
+        'n',    // ṇ
+        'N',    // Ṉ
+        'n',    // ṉ
+        'N',    // Ṋ
+        'n',    // ṋ
+        'O',    // Ṍ
+        'o',    // ṍ
+        'O',    // Ṏ
+        'o',    // ṏ
+        'O',    // Ṑ
+        'o',    // ṑ
+        'O',    // Ṓ
+        'o',    // ṓ
+        'P',    // Ṕ
+        'p',    // ṕ
+        'P',    // Ṗ
+        'p',    // ṗ
+        'R',    // Ṙ
+        'r',    // ṙ
+        'R',    // Ṛ
+        'r',    // ṛ
+        'R',    // Ṝ
+        'r',    // ṝ
+        'R',    // Ṟ
+        'r',    // ṟ
+        'S',    // Ṡ
+        's',    // ṡ
+        'S',    // Ṣ
+        's',    // ṣ
+        'S',    // Ṥ
+        's',    // ṥ
+        'S',    // Ṧ
+        's',    // ṧ
+        'S',    // Ṩ
+        's',    // ṩ
+        'T',    // Ṫ
+        't',    // ṫ
+        'T',    // Ṭ
+        't',    // ṭ
+        'T',    // Ṯ
+        't',    // ṯ
+        'T',    // Ṱ
+        't',    // ṱ
+        'U',    // Ṳ
+        'u',    // ṳ
+        'U',    // Ṵ
+        'u',    // ṵ
+        'U',    // Ṷ
+        'u',    // ṷ
+        'U',    // Ṹ
+        'u',    // ṹ
+        'U',    // Ṻ
+        'u',    // ṻ
+        'V',    // Ṽ
+        'v',    // ṽ
+        'V',    // Ṿ
+        'v',    // ṿ
+        'W',    // Ẁ
+        'w',    // ẁ
+        'W',    // Ẃ
+        'w',    // ẃ
+        'W',    // Ẅ
+        'w',    // ẅ
+        'W',    // Ẇ
+        'w',    // ẇ
+        'W',    // Ẉ
+        'w',    // ẉ
+        'X',    // Ẋ
+        'x',    // ẋ
+        'X',    // Ẍ
+        'x',    // ẍ
+        'Y',    // Ẏ
+        'y',    // ẏ
+        'Z',    // Ẑ
+        'z',    // ẑ
+        'Z',    // Ẓ
+        'z',    // ẓ
+        'Z',    // Ẕ
+        'z',    // ẕ
+        'h',    // ẖ
+        't',    // ẗ
+        'w',    // ẘ
+        'y',    // ẙ
+        'a',    // ẚ
+        's',    // ẛ
+        's',    // ẜ
+        's',    // ẝ
+        'SS',    // ẞ
+        'A',    // Ạ
+        'a',    // ạ
+        'A',    // Ả
+        'a',    // ả
+        'A',    // Ấ
+        'a',    // ấ
+        'A',    // Ầ
+        'a',    // ầ
+        'A',    // Ẩ
+        'a',    // ẩ
+        'A',    // Ẫ
+        'a',    // ẫ
+        'A',    // Ậ
+        'a',    // ậ
+        'A',    // Ắ
+        'a',    // ắ
+        'A',    // Ằ
+        'a',    // ằ
+        'A',    // Ẳ
+        'a',    // ẳ
+        'A',    // Ẵ
+        'a',    // ẵ
+        'A',    // Ặ
+        'a',    // ặ
+        'E',    // Ẹ
+        'e',    // ẹ
+        'E',    // Ẻ
+        'e',    // ẻ
+        'E',    // Ẽ
+        'e',    // ẽ
+        'E',    // Ế
+        'e',    // ế
+        'E',    // Ề
+        'e',    // ề
+        'E',    // Ể
+        'e',    // ể
+        'E',    // Ễ
+        'e',    // ễ
+        'E',    // Ệ
+        'e',    // ệ
+        'I',    // Ỉ
+        'i',    // ỉ
+        'I',    // Ị
+        'i',    // ị
+        'O',    // Ọ
+        'o',    // ọ
+        'O',    // Ỏ
+        'o',    // ỏ
+        'O',    // Ố
+        'o',    // ố
+        'O',    // Ồ
+        'o',    // ồ
+        'O',    // Ổ
+        'o',    // ổ
+        'O',    // Ỗ
+        'o',    // ỗ
+        'O',    // Ộ
+        'o',    // ộ
+        'O',    // Ớ
+        'o',    // ớ
+        'O',    // Ờ
+        'o',    // ờ
+        'O',    // Ở
+        'o',    // ở
+        'O',    // Ỡ
+        'o',    // ỡ
+        'O',    // Ợ
+        'o',    // ợ
+        'U',    // Ụ
+        'u',    // ụ
+        'U',    // Ủ
+        'u',    // ủ
+        'U',    // Ứ
+        'u',    // ứ
+        'U',    // Ừ
+        'u',    // ừ
+        'U',    // Ử
+        'u',    // ử
+        'U',    // Ữ
+        'u',    // ữ
+        'U',    // Ự
+        'u',    // ự
+        'Y',    // Ỳ
+        'y',    // ỳ
+        'Y',    // Ỵ
+        'y',    // ỵ
+        'Y',    // Ỷ
+        'y',    // ỷ
+        'Y',    // Ỹ
+        'y',    // ỹ
+        'LL',    // Ỻ
+        'll',    // ỻ
+        'V',    // Ỽ
+        'v',    // ỽ
+        'Y',    // Ỿ
+        'y',    // ỿ
+        'a',    // ἀ
+        'ha',    // ἁ
+        'a',    // ἂ
+        'ha',    // ἃ
+        'a',    // ἄ
+        'ha',    // ἅ
+        'a',    // ἆ
+        'ha',    // ἇ
+        'A',    // Ἀ
+        'HA',    // Ἁ
+        'A',    // Ἂ
+        'HA',    // Ἃ
+        'A',    // Ἄ
+        'HA',    // Ἅ
+        'A',    // Ἆ
+        'HA',    // Ἇ
+        'e',    // ἐ
+        'he',    // ἑ
+        'e',    // ἒ
+        'he',    // ἓ
+        'e',    // ἔ
+        'he',    // ἕ
+        'E',    // Ἐ
+        'HE',    // Ἑ
+        'E',    // Ἒ
+        'HE',    // Ἓ
+        'E',    // Ἔ
+        'HE',    // Ἕ
+        'e',    // ἠ
+        'he',    // ἡ
+        'e',    // ἢ
+        'he',    // ἣ
+        'e',    // ἤ
+        'he',    // ἥ
+        'e',    // ἦ
+        'he',    // ἧ
+        'E',    // Ἠ
+        'HE',    // Ἡ
+        'E',    // Ἢ
+        'HE',    // Ἣ
+        'E',    // Ἤ
+        'HE',    // Ἥ
+        'E',    // Ἦ
+        'HE',    // Ἧ
+        'i',    // ἰ
+        'hi',    // ἱ
+        'i',    // ἲ
+        'hi',    // ἳ
+        'i',    // ἴ
+        'hi',    // ἵ
+        'i',    // ἶ
+        'hi',    // ἷ
+        'I',    // Ἰ
+        'HI',    // Ἱ
+        'I',    // Ἲ
+        'HI',    // Ἳ
+        'I',    // Ἴ
+        'HI',    // Ἵ
+        'I',    // Ἶ
+        'HI',    // Ἷ
+        'o',    // ὀ
+        'ho',    // ὁ
+        'o',    // ὂ
+        'ho',    // ὃ
+        'o',    // ὄ
+        'ho',    // ὅ
+        'O',    // Ὀ
+        'HO',    // Ὁ
+        'O',    // Ὂ
+        'HO',    // Ὃ
+        'O',    // Ὄ
+        'HO',    // Ὅ
+        'y',    // ὐ
+        'hy',    // ὑ
+        'y',    // ὒ
+        'hy',    // ὓ
+        'y',    // ὔ
+        'hy',    // ὕ
+        'y',    // ὖ
+        'hy',    // ὗ
+        'HY',    // Ὑ
+        'HY',    // Ὓ
+        'HY',    // Ὕ
+        'HY',    // Ὗ
+        'o',    // ὠ
+        'ho',    // ὡ
+        'o',    // ὢ
+        'ho',    // ὣ
+        'o',    // ὤ
+        'ho',    // ὥ
+        'o',    // ὦ
+        'ho',    // ὧ
+        'O',    // Ὠ
+        'HO',    // Ὡ
+        'O',    // Ὢ
+        'HO',    // Ὣ
+        'O',    // Ὤ
+        'HO',    // Ὥ
+        'O',    // Ὦ
+        'HO',    // Ὧ
+        'a',    // ὰ
+        'a',    // ά
+        'e',    // ὲ
+        'e',    // έ
+        'e',    // ὴ
+        'e',    // ή
+        'i',    // ὶ
+        'i',    // ί
+        'o',    // ὸ
+        'o',    // ό
+        'y',    // ὺ
+        'y',    // ύ
+        'o',    // ὼ
+        'o',    // ώ
+        'ai',    // ᾀ
+        'hai',    // ᾁ
+        'ai',    // ᾂ
+        'hai',    // ᾃ
+        'ai',    // ᾄ
+        'hai',    // ᾅ
+        'ai',    // ᾆ
+        'hai',    // ᾇ
+        'AI',    // ᾈ
+        'HAI',    // ᾉ
+        'AI',    // ᾊ
+        'HAI',    // ᾋ
+        'AI',    // ᾌ
+        'HAI',    // ᾍ
+        'AI',    // ᾎ
+        'HAI',    // ᾏ
+        'ei',    // ᾐ
+        'hei',    // ᾑ
+        'ei',    // ᾒ
+        'hei',    // ᾓ
+        'ei',    // ᾔ
+        'hei',    // ᾕ
+        'ei',    // ᾖ
+        'hei',    // ᾗ
+        'EI',    // ᾘ
+        'HEI',    // ᾙ
+        'EI',    // ᾚ
+        'HEI',    // ᾛ
+        'EI',    // ᾜ
+        'HEI',    // ᾝ
+        'EI',    // ᾞ
+        'HEI',    // ᾟ
+        'oi',    // ᾠ
+        'hoi',    // ᾡ
+        'oi',    // ᾢ
+        'hoi',    // ᾣ
+        'oi',    // ᾤ
+        'hoi',    // ᾥ
+        'oi',    // ᾦ
+        'hoi',    // ᾧ
+        'OI',    // ᾨ
+        'HOI',    // ᾩ
+        'OI',    // ᾪ
+        'HOI',    // ᾫ
+        'OI',    // ᾬ
+        'HOI',    // ᾭ
+        'OI',    // ᾮ
+        'HOI',    // ᾯ
+        'a',    // ᾰ
+        'a',    // ᾱ
+        'ai',    // ᾲ
+        'ai',    // ᾳ
+        'ai',    // ᾴ
+        'a',    // ᾶ
+        'ai',    // ᾷ
+        'A',    // Ᾰ
+        'A',    // Ᾱ
+        'A',    // Ὰ
+        'A',    // Ά
+        'AI',    // ᾼ
+        'i',    // ι
+        '¨̂',    // ῁
+        'ei',    // ῂ
+        'ei',    // ῃ
+        'ei',    // ῄ
+        'e',    // ῆ
+        'ei',    // ῇ
+        'E',    // Ὲ
+        'E',    // Έ
+        'E',    // Ὴ
+        'E',    // Ή
+        'EI',    // ῌ
+        '᾿̂',    // ῏
+        'i',    // ῐ
+        'i',    // ῑ
+        'i',    // ῒ
+        'i',    // ΐ
+        'i',    // ῖ
+        'i',    // ῗ
+        'I',    // Ῐ
+        'I',    // Ῑ
+        'I',    // Ὶ
+        'I',    // Ί
+        '῾̂',    // ῟
+        'y',    // ῠ
+        'y',    // ῡ
+        'y',    // ῢ
+        'y',    // ΰ
+        'r',    // ῤ
+        'rh',    // ῥ
+        'y',    // ῦ
+        'y',    // ῧ
+        'Y',    // Ῠ
+        'Y',    // Ῡ
+        'Y',    // Ὺ
+        'Y',    // Ύ
+        'RH',    // Ῥ
+        'oi',    // ῲ
+        'oi',    // ῳ
+        'oi',    // ῴ
+        'o',    // ῶ
+        'oi',    // ῷ
+        'O',    // Ὸ
+        'O',    // Ό
+        'O',    // Ὼ
+        'O',    // Ώ
+        'OI',    // ῼ
+        ' ',    //  
+        ' ',    //  
+        ' ',    //  
+        ' ',    //  
+        ' ',    //  
+        ' ',    //  
+        ' ',    //  
+        ' ',    //  
+        ' ',    //  
+        ' ',    //  
+        '-',    // ‐
+        '-',    // ‑
+        '-',    // ‒
+        '-',    // ―
+        '||',    // ‖
+        '\'',    // ‛
+        '"',    // ‟
+        '.',    // ․
+        '..',    // ‥
+        '\'',    // ′
+        '"',    // ″
+        '!!',    // ‼
+        '/',    // ⁄
+        '[',    // ⁅
+        ']',    // ⁆
+        '??',    // ⁇
+        '?!',    // ⁈
+        '!?',    // ⁉
+        '*',    // ⁎
+        ' ',    //  
     );
 
     /**
@@ -1553,6 +2587,6 @@ class cTransliterator {
      */
     static function convert($string) {
         return str_replace(self::$fromchars, self::$tochars, $string);
-    }
-    
+    }          
+
 }
