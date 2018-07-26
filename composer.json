@@ -1,0 +1,20 @@
+{
+    "name": "lukemadhanga/transliterator",
+    "description": "A PHP < 5.4 fallback for transliterator_transliterate()",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "authors": [
+        {
+            "name": "Luke Madhanga",
+            "email": "luke@madhan.ga",
+            "homepage": "http://madhan.ga",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LukeMadhanga\\": "src/"
+        }
+    }
+}
