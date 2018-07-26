@@ -2,6 +2,8 @@
 
 A PHP < 5.4 fallback for `transliterator_transliterate()`
 
+> composer require lukemadhanga/php-transliterator
+
 PHP 5.4 has a built-in function, `transliterator_transliterate()` which does exactly what it says on the tin. This class works as a basic fallback for that function which is available from PHP5.4 with the `intl` package installed.
 
 #### Supported Blocks ####
@@ -31,5 +33,5 @@ PHP 5.4 has a built-in function, `transliterator_transliterate()` which does exa
 #### Usage ####
 
 
->    include_once 'path/to/cTransliterator.php';
+    include_once 'path/to/cTransliterator.php';
     echo cTransliterator::convert('Antonín Dvořák'); // Antonin Dvorak
