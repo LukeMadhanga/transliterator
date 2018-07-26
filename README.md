@@ -32,6 +32,7 @@ PHP 5.4 has a built-in function, `transliterator_transliterate()` which does exa
 
 #### Usage ####
 
-
+    # If no composer:
     include_once 'path/to/cTransliterator.php';
+    
     echo cTransliterator::convert('Antonín Dvořák'); // Antonin Dvorak
