@@ -1,5 +1,5 @@
 {
-    "name": "lukemadhanga/transliterator",
+    "name": "lukemadhanga/php-transliterator",
     "description": "A PHP < 5.4 fallback for transliterator_transliterate()",
     "require": {
         "php": ">=5.3.3"
