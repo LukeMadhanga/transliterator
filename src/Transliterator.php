@@ -1,5 +1,7 @@
 <?php
 
+namespace LukeMadhanga;
+
 /**
  * Comprehensive string converter for PHP < 5.4
  * Supported blocks:
@@ -25,7 +27,7 @@
  * Cyrillic Extended-B
  * Latin Extended-D
  */
-class cTransliterator {
+class Transliterator {
 
     private static $fromchars = array(
         "\xe2\x80\x9a",    // ‚ (,)
